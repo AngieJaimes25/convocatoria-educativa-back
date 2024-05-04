@@ -5,7 +5,7 @@ FROM adoptopenjdk:11-jre-hotspot
 WORKDIR /app
 
 # Copiar el archivo JAR construido de tu proyecto a la imagen
-COPY target/convocatoria.0.0.1-SNAPSHOT.jar app.jar
+COPY target/convocatoria-0.0.1-SNAPSHOT.jar app.jar
 
 # Comando para ejecutar la aplicación Spring Boot cuando se inicie el contenedor
 CMD ["java", "-jar", "app.jar"]
