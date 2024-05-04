@@ -1,8 +1,5 @@
 # Usar una imagen base que contenga Java
-FROM adoptopenjdk:11-jre-hotspot
-
-# Establecer el directorio de trabajo dentro del contenedor
-WORKDIR /app
+FROM amazoncorretto:22-alpine3.19-jdk
 
 # Copiar el archivo JAR construido de tu proyecto a la imagen
 COPY target/convocatoria-0.0.1-SNAPSHOT.jar app.jar
